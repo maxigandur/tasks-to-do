@@ -1,0 +1,61 @@
+
+.divtask h1{
+    background-color: white;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.divtask h1:hover{
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    margin: 15px;
+    text-align: center;
+    
+}
+.finalized h1{
+    background-color: rgba(172, 255, 47, 0.599);
+}
+.finalized h1:hover{
+    background-color: greenyellow;
+}
+
+@media (max-width: 767px){
+    .grid{
+        grid-template-columns: repeat(3,.9fr);
+        column-gap: 5px;
+        margin-left: -0;
+        padding-left: 5px;
+    }
+    .divtask h1{
+        font-size: 22px;
+    }
+    
+}
+@media (max-width: 642px){
+    .tasks{
+        width: 60%;
+    }
+}
+
+@media (max-width: 426px){
+    .tasks{
+        width: 75%;
+    }
+   
+}
+
+@media (max-width: 334px){
+    .tasks{
+        width: 90%;
+    }
+   
+}

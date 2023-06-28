@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kanit:wght@200&display=swap');
+
+.modalMain{
+    background-image: url("../Reminder\ Note\ PNG\ Clip\ Art\ Image.png") ;
+    background-size: cover; 
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px; 
+    
+}
+.modalMain .close{
+    position: absolute;
+    margin-top: 72px;
+    margin-right: 3px;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+    height: 30px;
+    font-size: 15px;
+    transition: 0.5s;  
+    content: 'Close'
+}
+
+
+.item{
+    width: 50px;
+}
+a{
+    text-decoration:none;
+}
+.label {
+    padding: 1px 3px 2px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #bfbfbf;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.label.success {
+    background-color: #46a546;
+}
+
+.item a p.new-label span{
+  position: relative;
+  content: 'Close'
+  
+}
+.item:hover a p.new-label span{
+  display: none;
+}
+.item:hover a p.new-label:after{
+  content: '------->';
+}
+.nested-grid{      
+    position: absolute;
+    width: 100%;
+    bottom: 0;  
+    display: flex;
+    justify-content: space-around;
+  
+}
+.nested-grid button{  
+  
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.finalize:hover{
+    scale: 1.1;
+    background-color: rgba(172, 255, 47, 0.599);
+}
+.delete:hover{
+    scale: 1.1;
+    background-color: rgba(255, 0, 0, 0.688);
+}
+.modalText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;  
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.modalText h1{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.blur{
+    backdrop-filter: blur(100px);
+}
+
+@media (max-width: 1600px){
+    .modalMain{
+        background-position: center;
+    }
+}
+@media (max-width: 1368px){
+    .modalMain{
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        padding-bottom: 10%;
+        margin-left: 30%;
+        width: 160%;
+    }
+}
+@media (max-width: 767px){
+    .modalMain{
+        
+        background-position: center;
+        padding-bottom: 10%;
+        margin-left: 30%;
+        width: 160%;
+    }
+}
+
+@media (max-width: 642px){
+    .modalMain{
+        width: 140%;
+        margin-left: 42%;
+    }
+}
+
+@media (max-width: 642px){
+    .modalMain{
+        width: 120%;
+        margin-left: 52%;
+    }
+}
+
+@media (max-width: 338px){
+    .modalMain{
+        width: 110%;
+        margin-left: 57%;
+    }
+}
+
+@media (max-width: 332px){
+    .modalMain{
+        width: 100%;
+        margin-left: 61%;
+    }
+}
