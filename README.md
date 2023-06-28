@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Tasks To Do React By Maxx
 
 Desarrolle un proyecto de Tasks To Do Simple realizado con Javascript, ReactJs, SweetAlert2, AnimatedJs,HTML5, CSS, Con Diseño Simple y muy intuitivo! Principalmente lo realize para la practica de comunicacion entre COMPONENTES utilizando ReactJS
 
